@@ -1,0 +1,23 @@
+{
+  "name": "broccoli-msbuild",
+  "version": "0.1.0",
+  "description": "MSBuild / xbuild plugin for Broccoli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "broccoli",
+    "msbuild",
+    "xbuild"
+  ],
+  "author": "Chris Eldredge <chris.eldredge@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chriseldredge/broccoli-msbuild"
+  },
+  "dependencies": {
+    "colors": "^0.6.2"
+  }
+}
