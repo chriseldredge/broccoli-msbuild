@@ -18,6 +18,7 @@
     "url": "https://github.com/chriseldredge/broccoli-msbuild"
   },
   "dependencies": {
+    "broccoli-exec": "git://github.com/chriseldredge/broccoli-exec.git#0.1.0",
     "colors": "^0.6.2"
   }
 }
