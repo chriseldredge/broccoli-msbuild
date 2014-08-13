@@ -74,10 +74,22 @@ configuration |          | Configuration (`'Debug'`, `'Release'`) to build (usin
 verbosity     |          | Logging verbosity (`'error'` (default), `'warning'` or `'info'`)
 properties    |          | Hash of properties to pass to MSBuild (using `/p:Name=Value` switches)
 command       |          | Location of MSBuild.exe / xbuild to invoke (see Tool Resolution section)
+toolsVersion  |          | Specify a particular version of MSBuild to use (e.g. `'3.5'`, `'4.0'`, `'12.0'`)
 
 ## Tool Resolution
 
-TODO. Currently assumes xbuild on PATH.
+When running on Windows, the registry key `HKLM\Software\Microsoft\MSBuild\ToolsVersions` is probed
+to resolve the location of MSBuild.exe.
+
+When `toolsVersion` is specified, that particular version will be probed to find the appropriate `MSBuildToolsPath`
+value.
+
+When no `toolsVersion` is specified, the highest version of MSBuild is selected automatically.
+
+When *not* running on Windows, it is assumed that `xbuild` is available on `$PATH`.
+
+You can also hard-code a path to MSBuild.exe or xbuild on any operating system by explicitly setting
+`command`.
 
 ### License
 

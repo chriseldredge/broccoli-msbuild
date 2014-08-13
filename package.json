@@ -1,6 +1,6 @@
 {
   "name": "broccoli-msbuild",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "MSBuild / xbuild plugin for Broccoli",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,10 @@
     "url": "https://github.com/chriseldredge/broccoli-msbuild"
   },
   "dependencies": {
-    "broccoli-exec": "git://github.com/chriseldredge/broccoli-exec.git#0.1.0",
-    "colors": "^0.6.2"
+    "broccoli-exec": "git://github.com/chriseldredge/broccoli-exec.git#0.2.0",
+    "colors": "^0.6.2",
+    "winreg": "0.0.12",
+    "rsvp": "~3.0.12",
+    "array.prototype.find": "~0.1.1"
   }
 }
